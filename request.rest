@@ -1,0 +1,28 @@
+GET http://localhost:5000/admin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoyLCJuYW1hIjoyLCJlbWFpbCI6MiwiaWF0IjoxNjYwNzExMjA3LCJleHAiOjE2NjA3MTEyMjd9.YY1OklAjf_-u_5CG3twq7CgKKbQX3Pf8Ajzm-IcvU-Y
+
+###
+POST http://localhost:5000/admin
+Content-Type: application/json
+
+{
+    "nama": "Admin Warroom 2",
+    "email": "admin2warroom123@gmail.com",
+    "pass": "123warroom",
+    "confPass": "123warroom2"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "nama" : "Admin Warroom",
+    "pass" : "123warroom"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
